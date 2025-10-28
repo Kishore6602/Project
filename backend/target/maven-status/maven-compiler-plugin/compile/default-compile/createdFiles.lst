@@ -1,0 +1,8 @@
+com\carrental\backend\model\Car.class
+com\carrental\backend\controller\CarController.class
+com\carrental\backend\CarRentalApplication.class
+com\carrental\backend\repository\BookingRepository.class
+com\carrental\backend\CarRentalApplication$1.class
+com\carrental\backend\model\Booking.class
+com\carrental\backend\controller\BookingController.class
+com\carrental\backend\repository\CarRepository.class
