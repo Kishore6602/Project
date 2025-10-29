@@ -45,15 +45,17 @@ Folders:
 Backend - run:
 1. Java 17+ and Maven installed.
 2. MongoDB running locally.
-3. cd backend
-4. mvn clean install -DskipTests
-5. mvn spring-boot:run
+3. Open Terminal
+4. cd backend
+5. mvn clean install -DskipTests
+6. mvn spring-boot:run
 
 Frontend - run:
 1. Node.js and npm installed.
-2. cd frontend
-3. npm install
-4. npm start
+2. Open Terminal
+3. cd frontend
+4. npm install
+5. npm start
 
 Mongo DB Screenshots added in ppt
 
