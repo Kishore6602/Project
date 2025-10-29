@@ -36,13 +36,34 @@ database/ → MongoDB collections for cars and bookings
 
 🚀 How to Run
 
-Start the backend using Spring Boot (mvn spring-boot:run)
+Car Rental - Full Stack (Backend + Frontend)
 
-Start the frontend using npm run dev
+Folders:
+- backend: Spring Boot app (port 8080)
+- frontend: React app (port 3000)
 
-Connect MongoDB (Compass or local instance)
+Backend - run:
+1. Java 17+ and Maven installed.
+2. MongoDB running locally.
+3. cd backend
+4. mvn clean install -DskipTests
+5. mvn spring-boot:run
 
-Access the app at http://localhost:3000/
+Frontend - run:
+1. Node.js and npm installed.
+2. cd frontend
+3. npm install
+4. npm start
+
+Mongo DB Screenshots added in ppt
+
+API endpoints:
+GET  /api/cars
+POST /api/cars
+GET  /api/bookings
+POST /api/bookings
+
+MongoDB connection: mongodb://localhost:27017/carrental
 
 🧠 Future Enhancements
 
