@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import "./styles.css";
+=======
+>>>>>>> ebeff5ed88c4400acae952dc4878cc8c32222d3c
 
 function BookCar() {
   const [cars, setCars] = useState([]);
@@ -67,6 +70,7 @@ function BookCar() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="page page-center">
       <div className="card card-form">
         <h2 className="form-title">Book a Car</h2>
@@ -126,6 +130,49 @@ function BookCar() {
           </div>
         </form>
       </div>
+=======
+    <div style={{ maxWidth: "400px", margin: "40px auto", textAlign: "center" }}>
+      <h2>Book a Car</h2>
+      <form onSubmit={handleSubmit}>
+        <label>Customer Name:</label>
+        <input
+          type="text"
+          value={customerName}
+          onChange={(e) => setCustomerName(e.target.value)}
+          required
+        />
+
+        <label>Select Car:</label>
+        <select value={carId} onChange={(e) => setCarId(e.target.value)} required>
+          <option value="">-- Choose a car --</option>
+          {cars.map((car) => (
+            <option key={car.id} value={car.id}>
+              {car.name} ({car.brand}) - ₹{car.price}/day
+            </option>
+          ))}
+        </select>
+
+        <label>Start Date:</label>
+        <input
+          type="date"
+          value={startDate}
+          onChange={(e) => setStartDate(e.target.value)}
+          required
+        />
+
+        <label>End Date:</label>
+        <input
+          type="date"
+          value={endDate}
+          onChange={(e) => setEndDate(e.target.value)}
+          required
+        />
+
+        <h3>Total Price: ₹{totalPrice}</h3>
+
+        <button type="submit">Book Car</button>
+      </form>
+>>>>>>> ebeff5ed88c4400acae952dc4878cc8c32222d3c
     </div>
   );
 }

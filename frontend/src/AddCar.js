@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import "./styles.css";
+=======
+>>>>>>> ebeff5ed88c4400acae952dc4878cc8c32222d3c
 
 function AddCar() {
   const [car, setCar] = useState({
@@ -38,6 +41,7 @@ function AddCar() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="page page-center">
       <div className="card card-form">
         <h2 className="form-title">Add New Car</h2>
@@ -84,6 +88,50 @@ function AddCar() {
           </div>
         </form>
       </div>
+=======
+    <div style={{ padding: "20px" }}>
+      <h2>Add New Car</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Car Name"
+          value={car.name}
+          onChange={handleChange}
+          required
+        />
+        <br />
+        <input
+          type="text"
+          name="brand"
+          placeholder="Car Brand"
+          value={car.brand}
+          onChange={handleChange}
+          required
+        />
+        <br />
+        <input
+          type="number"
+          name="price"
+          placeholder="Price"
+          value={car.price}
+          onChange={handleChange}
+          required
+        />
+        <br />
+        <label>
+          Available:
+          <input
+            type="checkbox"
+            name="available"
+            checked={car.available}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <button type="submit">Add Car</button>
+      </form>
+>>>>>>> ebeff5ed88c4400acae952dc4878cc8c32222d3c
     </div>
   );
 }
